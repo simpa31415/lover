@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Love App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <!-- Endast knappen syns initialt -->
+    <button id="loveButton">Tryck här</button>
+
+    <!-- Allt annat är dolt från start -->
+    <div id="message" style="display: none;">
+        <div class="hearts">❤️ 💖 💕 💗 💘 💞</div>
+        <h1>Älskar dig ses snart</h1>
+        <p id="extra-text">Hur mår du? Vill du kolla film och äta kebab sen?</p>
+        <div class="hearts">💞 💘 💗 💕 💖 ❤️</div>
+    </div>
+</div>
+
+<script>
+    const button = document.getElementById("loveButton");
+    const message = document.getElementById("message");
+
+    // Säkerställ att meddelandet börjar dolt
+    message.style.display = "none";
+
+    button.addEventListener("click", function() {
+        // Dölj knappen
+        button.style.display = "none";
+
+        // Vänta 3 sekunder
+        setTimeout(function() {
+            // Visa meddelandet
+            message.style.display = "block";
+        }, 3000);
+    });
+</script>
+
+</body>
+</html>

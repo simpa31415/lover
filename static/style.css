@@ -1,0 +1,60 @@
+/* Fullskärmslayout och centering */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffe6f0, #fff5f9);
+    display: flex;
+    justify-content: center; /* horisontell centrering */
+    align-items: center;     /* vertikal centrering */
+}
+
+/* Container centrerar innehållet */
+.container {
+    text-align: center;
+}
+
+/* Knappdesign */
+button {
+    padding: 20px 40px;
+    font-size: 24px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(45deg, #ff4d6d, #ff1e56);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(255, 0, 80, 0.3);
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/* Meddelandet */
+#message h1 {
+    font-size: 60px;
+    color: red;
+    margin: 20px 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Hjärtan */
+.hearts {
+    font-size: 40px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+#extra-text {
+    font-size: 28px;
+    color: #ff1e56;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out forwards;
+}
