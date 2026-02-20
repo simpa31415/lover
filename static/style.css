@@ -11,7 +11,6 @@ body, html {
     align-items: center;     /* vertikal centrering */
 }
 
-/* Container centrerar innehållet */
 .container {
     text-align: center;
 }
@@ -33,7 +32,7 @@ button:hover {
     transform: scale(1.1);
 }
 
-/* Meddelandet */
+/* Huvudmeddelande */
 #message h1 {
     font-size: 60px;
     color: red;
@@ -41,20 +40,23 @@ button:hover {
     animation: fadeIn 1s ease-in-out forwards;
 }
 
+/* Extra rad under huvudtexten */
+#extra-text {
+    font-size: 28px;
+    color: #ff1e56;
+    margin-top: 10px;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
 /* Hjärtan */
 .hearts {
     font-size: 40px;
+    margin: 10px 0;
+    animation: fadeIn 1s ease-in-out forwards;
 }
 
 /* Fade-in animation */
 @keyframes fadeIn {
     from { opacity: 0; transform: scale(0.8); }
     to { opacity: 1; transform: scale(1); }
-}
-
-#extra-text {
-    font-size: 28px;
-    color: #ff1e56;
-    margin-top: 20px;
-    animation: fadeIn 1s ease-in-out forwards;
 }
